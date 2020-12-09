@@ -12,5 +12,7 @@
 
 }
 .footer{
-
+  width: 100vw;
+  padding: 4rem;
+  display:flex;
 }
