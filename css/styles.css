@@ -1,18 +1,135 @@
+body{
+  padding: 0;
+  margin:0;
+}
+a{
+  color: #4D4D4D;
+  text-decoration: none;
+}
+a:hover{
+  color: #333333;
+}
+
+h1, h2, h3{
+  font-family: 'Playfair Display', serif;
+}
+
 .container{
-  width:90vw;
-  margin:0 auto;
+  font-family: 'Chivo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4D4D4D;
 }
+/* Header */
 .header{
-  display:flex;
+  width: 90vw;
+  display:grid;
+  grid-template-columns: 0.25fr 2.75fr 0.5fr;
 }
+
 .header .logo-wrapper img{
   width:75px;
 }
-.content{
 
+.header .main-menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
-.footer{
-  width: 100vw;
-  padding: 4rem;
+.header .main-menu a{
+  margin-right: 1rem;
+}
+.header .main-menu a:last-of-type{
+  margin-right: 0px;
+}
+
+.header .lang-menu{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Content */
+.content{
+  width: 90vw;
+}
+.content .index-header{
+  width: 100%;
+  height: 500px;
+  background-image: url("../assets/images/road-1072823_1920.jpg");
+}
+.content .index-header__title{
+  color:white;
+  padding: 2rem;
+}
+.index-header__title h1{
+  font-size: 4rem;
+  margin: 0px;
+}
+.index-header__title h2{
+  font-size: 2rem;
+  margin: 0px;
+}
+.index-header__title h3{
+  font-size: 1rem;
+  margin: 0px;
+}
+.index-header__title h3 a{
+  color:white;
+}
+
+.paseos__title{
+  font-size: 2rem;
+}
+.paseos_content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.paseos__item{
+  width: 29%;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.25); 
+  box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.25);
   display:flex;
+  overflow: hidden;
+}
+.paseos__item__wrapper{
+  width: 100%;
+}
+.paseos__item__wrapper .image__box{
+  height: 80%;
+  overflow: hidden;
+}
+.paseos__item__wrapper img{
+  width: 125%;
+}
+.paseos__item__wrapper p{
+  height: 20px;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #8C8C8C;
+  margin-top: 4rem;
+}
+.footer-container{
+  width: 90%;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item img{
+  height:50px
+}
+.footer__text p{
+  margin:0.5rem;
 }
